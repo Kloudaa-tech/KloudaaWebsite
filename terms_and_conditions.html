@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kloudaa</title>
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/jquery.min.js"></script>
+</head>
+
+<body class="bg-dark">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-black sticky-top" data-bs-theme="dark">
+        <div class="container py-2">
+            <a class="navbar-brand" href="/" style="margin-top: -8px;">
+                <img src="assets/logo.svg" alt="logo" width="130">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-lg-auto">
+                    <li class="nav-item px-2">
+                        <button class="nav-link" data-href="/about">About</button>
+                    </li>
+                    <li class="nav-item px-2">
+                        <button class="nav-link" data-href="/privacy-policy">Privacy Policy</button>
+                    </li>
+                    <li class="nav-item px-2">
+                        <button class="nav-link active" data-href="/terms-and-conditions">Terms & Conditions</button>
+                    </li>
+                </ul>
+                <div class="d-lg-flex mt-3 mt-lg-0">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-lg-block me-3">
+                        <img src="assets/apple-store.svg" alt="" class="image-fluid" width="100">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="d-none d-lg-block me-3">
+                        <img src="assets/google-play.svg" alt="" class="image-fluid" width="100">
+                    </a>
+                    <img src="assets/wa-comming-soon.svg" alt="" class="img-fluid" width="150">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+    <script src="scripts/routing_script.js"></script>
+</body>
+
+</html>
