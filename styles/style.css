@@ -60,7 +60,7 @@ body {
 
 @media screen and (max-width: 992px) {
     .banner-txt {
-        font-size: 40px;
+        font-size: 35px;
         line-height: 50px;
     }
 
@@ -73,8 +73,14 @@ body {
     }
 
     .feature-card {
-        min-width: 100%;
-        padding: 0 0 20px 0 !important;
+        min-width: 40%;
+    }
+
+    @media screen and (max-width: 767px) {
+        .feature-card {
+            min-width: 100%;
+            padding: 0 0 20px 0 !important;
+        }
     }
 
     .img-shadow {
