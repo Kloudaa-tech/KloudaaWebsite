@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/jquery.min.js"></script>
+
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body class="bg1 overflow-auto">
@@ -151,23 +159,50 @@
 
             <!-- FEATURES -->
             <div class="py-5 px-3 px-lg-5">
-                <div class="banner-sub-txt st2 text-white mb-5" style="font-weight: 700;">
+                <div class="banner-sub-txt st2 text-white mb-5 d-flex items-center" style="font-weight: 700;">
                     OUR TOP TIER FEATURES
+                    <div class="me-1 ms-auto d-none d-md-block" style="width: fit-content;">
+                        <button class="prevBtn btn p-0" style="height: fit-content;">
+                            <img src="assets/prev.svg" alt="" width="30" height="30">
+                        </button>
+                    </div>
+                    <div class="ms-1 d-none d-md-block" style="width: fit-content;">
+                        <button class="nextBtn btn p-0" style="height: fit-content;">
+                            <img src="assets/next.svg" alt="" width="30" height="30">
+                        </button>
+                    </div>
                 </div>
-                <div class="d-block d-md-flex overflow-auto side_scroll">
-                    <div class="feature-card pe-3">
+                <div class="side_scroll d-none d-md-block owl-carousel owl-theme">
+                    <div class="feature-card">
                         <img src="assets/features/explore_songs.svg" alt="" class="col-12 img-fluid">
                     </div>
-                    <div class="feature-card pe-3">
+                    <div class="feature-card">
                         <img src="assets/features/listen.svg" alt="" class="col-12 img-fluid">
                     </div>
-                    <div class="feature-card pe-3">
+                    <div class="feature-card">
                         <img src="assets/features/shareit.svg" alt="" class="col-12 img-fluid">
                     </div>
-                    <div class="feature-card pe-3">
+                    <div class="feature-card">
                         <img src="assets/features/buzz.svg" alt="" class="col-12 img-fluid">
                     </div>
-                    <div class="feature-card pe-3">
+                    <div class="feature-card">
+                        <img src="assets/features/download.svg" alt="" class="col-12 img-fluid">
+                    </div>
+                </div>
+                <div class="d-block d-md-none">
+                    <div class="feature-card">
+                        <img src="assets/features/explore_songs.svg" alt="" class="col-12 img-fluid">
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/features/listen.svg" alt="" class="col-12 img-fluid">
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/features/shareit.svg" alt="" class="col-12 img-fluid">
+                    </div>
+                    <div class="feature-card">
+                        <img src="assets/features/buzz.svg" alt="" class="col-12 img-fluid">
+                    </div>
+                    <div class="feature-card">
                         <img src="assets/features/download.svg" alt="" class="col-12 img-fluid">
                     </div>
                 </div>
@@ -248,6 +283,29 @@
 
     <script src="scripts/bootstrap.bundle.min.js"></script>
     <script src="scripts/routing_script.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        owl.owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 5000,
+            autoplayHoverPause: true,
+            margin: 20,
+            center: true,
+            responsive: {
+                // breakpoint from 768 up
+                768: {
+                    items: 3.5,
+                },
+            },
+        });
+        $('.nextBtn').click(function () {
+            owl.trigger('next.owl.carousel');
+        })
+        $('.prevBtn').click(function () {
+            owl.trigger('prev.owl.carousel', [300]);
+        })
+    </script>
 </body>
 
 </html>

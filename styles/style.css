@@ -11,7 +11,7 @@ body {
     transition: .6s;
 }
 
-.nav-brand img{
+.nav-brand img {
     width: 130px !important;
 }
 
@@ -42,10 +42,6 @@ body {
 
 .banner-sub-txt.st2 {
     font-size: 32px;
-}
-
-.side_scroll::-webkit-scrollbar {
-    height: 0;
 }
 
 .feature-card {
@@ -84,6 +80,7 @@ body {
 
     .feature-card {
         min-width: 40%;
+        transition: .3s;
     }
 
     @media screen and (max-width: 767px) {
