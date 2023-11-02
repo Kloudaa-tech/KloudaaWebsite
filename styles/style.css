@@ -2,6 +2,11 @@
     font-size: 18px;
 }
 
+html {
+    width: 100vw !important;
+    overflow-x: hidden !important;
+}
+
 body {
     transition: .6s;
 }
@@ -50,11 +55,12 @@ body {
     left: 50% !important;
 }
 
-#observer2{
+#observer2 {
     margin-top: -5.2rem;
     z-index: 5;
 }
-.ts-3{
+
+.ts-3 {
     font-size: 40px;
 }
 
@@ -89,11 +95,12 @@ body {
         box-shadow: 0px 0px 100px 100px #0A84FF;
     }
 
-    #observer2{
+    #observer2 {
         margin-top: -3.2rem;
         z-index: 5;
     }
-    .ts-3{
+
+    .ts-3 {
         font-size: 20px;
     }
 }
