@@ -11,6 +11,10 @@ body {
     transition: .6s;
 }
 
+.nav-brand img{
+    width: 130px !important;
+}
+
 .bg1 {
     background: #202020;
 }
